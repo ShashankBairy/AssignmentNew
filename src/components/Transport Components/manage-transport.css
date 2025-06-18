@@ -1,0 +1,59 @@
+.manage-container {
+  padding-top: 6vh;
+
+}
+
+.form-box {
+  background: radial-gradient(345.85% 138.16% at 95.33% 0%, rgba(255, 255, 255, 0.00) 0.13%, #F7F9FA 100%);
+  backdrop-filter: blur(8.100000381469727px);
+  border-top: 4px solid #4a6cf7;
+  position: relative;
+  overflow: hidden;
+  height: 43vh;
+  width: 60vw;
+}
+
+
+
+.blue-img {
+  height:100%;
+  width:100%;
+  position:absolute;
+  left:4em;
+  top:13em
+  
+}
+
+.yellow-img{
+  height:100%;
+  width:100%;
+  position:absolute;
+  left:5em;
+  top:6em
+} 
+
+.red-img{
+   height:100%;
+  width:80%;
+  position:absolute;
+  left:6em;
+  top:11em
+}
+/*.red-ellipse{
+  position:absolute;
+  top:8rem;
+  left:39rem;
+} */
+
+/* .radiant-box {
+  position:absolute;
+  right: 0;
+  width: 10em;
+  height: 18em;
+  border-radius: 20px;
+  background: radial-gradient(circle at 30% 100%, rgba(74, 109, 247, 0.332) 0%, transparent 60%),   
+              radial-gradient(circle at 70% 0%, rgba(183, 255, 0, 0.2) 0%, transparent 60%),     
+              radial-gradient(circle at 50% 70%, rgba(255, 0, 0, 0.296) 0%, transparent 60%),       
+              #F7F9FA;  
+  
+} */

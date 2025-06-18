@@ -1,0 +1,20 @@
+.fee-head-container {
+  max-width: 600px;
+  height:45vh;
+}
+
+.fee-head-column {
+  min-width: 250px;
+}
+
+.fee-head-column2 {
+  min-width: 250px;
+}
+
+.fee-head-row {
+  color: #626262;
+  height:6vh;
+}
+.fee-head-row span{
+    color:#626262;
+}

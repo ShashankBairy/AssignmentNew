@@ -1,0 +1,47 @@
+.payment-card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+}
+
+.payment-header h6 {
+  font-size: 14px;
+  color: #6c757d;
+}
+.btn-export {
+  border: 1px solid #4876EE;
+  color: #4876EE;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-export:hover {
+  background-color: rgba(72, 118, 238, 0.05); /* Light hover background */
+}
+
+.payment-table th,
+.payment-table td {
+  vertical-align: middle;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payment-table th {
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.payment-table td {
+  color: #212529;
+}
+
+.payment-table tr:hover {
+  background-color: #f1f3f5;
+}
+
+.payment-container {
+  background-color: #fafbfc;
+}

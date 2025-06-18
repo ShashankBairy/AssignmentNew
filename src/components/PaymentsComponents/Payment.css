@@ -1,0 +1,166 @@
+/* Header container styling */
+
+.headerclass {
+
+  background-color: #f2f2f2;
+
+  border-radius: 8px;
+
+}
+ 
+/* Tabs wrapper */
+
+.custom-tabs {
+
+  border-color: #D3D3D3;
+
+  padding-bottom: 0.5rem;
+
+  margin-top: 1rem;
+
+}
+ 
+/* Inner tab wrapper layout (optional scroll support) */
+
+.tab-wrapper {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 4px;
+
+}
+ 
+/* Tab button style */
+
+.sub-tab {
+
+  background: none;
+
+  border: none;
+
+  outline: none;
+
+  padding: 6px 16px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #575757;
+
+  position: relative;
+
+  transition: all 0.2s ease;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  white-space: nowrap;
+
+  border-radius: 4px 4px 0 0;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+}
+ 
+/* Hover effect */
+
+.sub-tab:hover {
+
+  color: #0d6efd;
+
+  cursor: pointer;
+
+}
+ 
+/* Active tab */
+
+.sub-tab.active {
+
+  color: #0d6efd;
+
+  font-weight: 600;
+
+}
+ 
+/* Active tab underline */
+
+.sub-tab.active::after {
+
+  content: "";
+
+  position: absolute;
+
+  bottom: -7px;
+
+  left: 0;
+
+  right: 0;
+
+  margin: auto;
+
+  height: 2px;
+
+  background-color: #0d6efd;
+
+  width: 100%;
+
+  border-radius: 1px;
+
+}
+ 
+/* Optional: Scrollbar for overflow tabs */
+
+.tab-wrapper::-webkit-scrollbar {
+
+  height: 4px;
+
+}
+
+.tab-wrapper::-webkit-scrollbar-thumb {
+
+  background-color: #ccc;
+
+  border-radius: 2px;
+
+}
+
+.tab-wrapper::-webkit-scrollbar-track {
+
+  background: transparent;
+
+}
+ 
+/* Card-like container under the tab content */
+
+.tab-content-box {
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  height: 75vh;
+
+  background-color: #fff;
+
+  border-radius: 6px;
+
+  padding: 1rem;
+
+  overflow-y: auto;
+
+}
+ 
+/* Utility: Optional for section headings */
+
+.section-title {
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  margin-bottom: 0.5rem;
+
+}
+
+ 

@@ -1,0 +1,57 @@
+
+.pocketmoney-container {
+ 
+  height:40vh;
+  width:65vw;
+ 
+}
+ 
+.pocketmoney-info {
+  height: 5vh;
+}
+ 
+.pocketmoney-card {
+  max-width: 180px;
+  background: linear-gradient(135deg, #663ec7, #9c27b0);
+  color: white;
+  border-radius: 15px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  overflow: hidden;
+}
+ 
+.pocketmoney-admission,
+.pocketmoney-name {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+ 
+.pocketmoney-balance-label {
+  font-size: 0.8em;
+  color: #ccc;
+}
+ 
+.pocketmoney-balance {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+ 
+.pocketmoney-emoji {
+  width: 2.5vw;
+  height: 4.5vh;
+  padding-top: 5px;
+}
+.pocketmoney-add-money {
+  cursor: pointer;
+  transition: background 0.3s;
+  width:12vw;
+ 
+}
+ 
+.pocketmoney-add-money:hover {
+  background-color: #3425FF;
+}
+ 
+ 

@@ -1,0 +1,65 @@
+/* .main-map{
+    height:100%;
+    width:100%;
+   
+} */
+
+
+.map-img{
+    height:25rem;
+    width:100%;
+
+}
+.route-direction{
+    position:absolute;
+    z-index:1;
+    left:150px;
+    top:150px;
+}
+.route-num{
+    position:absolute;
+    z-index:1;
+    /* left:150px; */
+    top:60px;
+}
+
+.red-dot{
+    position:absolute;
+    z-index:1;
+    left:140px;
+    top:160px;
+}
+
+.green-dot{
+    position:absolute;
+    z-index:1;
+    left:400px;
+    top:200px;
+}
+.red-union{
+    position:absolute;
+    z-index:1;
+    left:130px;
+    top:143px;
+}
+
+.green-union{
+    position:absolute;
+    z-index:1;
+    left:390px;
+    top:185px;
+}
+
+.red-text{
+    position:absolute;
+    z-index:1;
+    left:133px;
+    top:143px;
+}
+
+.green-text{
+    position:absolute;
+    z-index:1;
+    left:400px;
+    top:190px;
+}
