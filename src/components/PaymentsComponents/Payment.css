@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   gap: 8px;
   padding-bottom: 4px;
+  border-bottom: 1px solid #D3D3D3;
 
 }
  
@@ -45,13 +46,13 @@
 
   font-size: 14px;
 
-  font-weight: 500;
+  font-weight: 400;
 
   color: #575757;
 
   position: relative;
 
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -79,9 +80,9 @@
 
 .sub-tab.active {
 
-  color: #0d6efd;
+  color: #3425FF;
 
-  font-weight: 600;
+  font-weight: 700;
 
 }
  
@@ -93,7 +94,7 @@
 
   position: absolute;
 
-  bottom: -7px;
+  bottom: -5px;
 
   left: 0;
 
@@ -101,9 +102,9 @@
 
   margin: auto;
 
-  height: 2px;
+  height: 1px;
 
-  background-color: #0d6efd;
+  background-color: #3425FF;
 
   width: 100%;
 

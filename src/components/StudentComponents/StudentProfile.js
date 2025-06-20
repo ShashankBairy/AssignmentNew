@@ -8,29 +8,30 @@ const StudentProfile = ()=>{
        <div className="d-flex flex-column">
           <MetricsGrid/>
         <section style={{width:"100%"}}> 
-         <div class="student-info-container w-100 d-flex flex-column gap-3 flex-auto">
+         <div class="student-info-container w-100 d-flex flex-column gap-3 flex-auto mt-3">
                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-0">
                     <div class="d-flex align-items-center gap-2">
                         <img src={studentInfo} className="student-info-img w-20 h-20" />
                         <div>
-                            <h2 className="stu-info mb-1 mt-1">Student Information</h2>
+                            <h2 className="stu-info mb-1 mt-1 ">Student Information</h2>
                             <p className="stu-info-sub-para mb-0">Get All Student Details Regarding Fee Payment, Transport, Pocket Money, Other Fee Heads</p>
                         </div>
                     </div>
-                    <select class="year-dropdown p-2 rounded fw-bold border-dark fs-0 flex-grow:0">
+                    <select class="year-dropdown py-2 px-2 fs-0">
                         <option>Inter 2</option>
                         <option>Inter 1</option>
                     </select>
                 </div>
-                <ul className="nav nav-tabs d-flex gap-2 border-bottom">
-                    <li className="nav-item">
+                <ul className="nav nav-tabs d-flex gap-2 ">
+                    <li className="nav-item pb-3">
                         <NavLink
                             to="/"
-                            className="nav-link text-decoration-none"
+                            className="nav_link text-decoration-none"
                             style={({ isActive }) => ({
-                                fontSize: '13px',
-                                color: isActive ? '#0056d2' : '#555',
-                                borderBottom: isActive ? '0.2vh solid #0056d2' : 'none'
+                                fontSize: '1rem',
+                                fontWeight:isActive ? '700' : '400',
+                                color: isActive ? '#3425FF' : '#555',
+                                borderBottom: isActive ? '0.2vh solid #3425FF' : 'none'
                             })}
                         >
                             Fee Details
@@ -39,11 +40,12 @@ const StudentProfile = ()=>{
                     <li className="nav-item">
                         <NavLink
                             to="pocketmoney"
-                            className="nav-link text-decoration-none"
+                            className="nav_link text-decoration-none"
                             style={({ isActive }) => ({
-                                fontSize: '13px',
-                                color: isActive ? '#0056d2' : '#555',
-                                borderBottom: isActive ? '0.2vh solid #0056d2' : 'none'
+                                fontSize: '1rem',
+                                fontWeight:isActive ? '700' : '400',
+                                color: isActive ? '#3425FF' : '#555',
+                                borderBottom: isActive ? '0.2vh solid #3425FF' : 'none'
                             })}
                         >
                             Pocket Money
@@ -51,12 +53,13 @@ const StudentProfile = ()=>{
                     </li>
                     <li className="nav-item">
                         <NavLink
-                            to="transportdetails"
-                            className="nav-link text-decoration-none"
+                            to="transport-info"
+                            className="nav_link text-decoration-none"
                             style={({ isActive }) => ({
-                                fontSize: '13px',
-                                color: isActive ? '#0056d2' : '#555',
-                                borderBottom: isActive ? '0.2vh solid #0056d2' : 'none'
+                                fontSize: '1rem',
+                                fontWeight:isActive ? '700' : '400',
+                                color: isActive ? '#3425FF' : '#555',
+                                borderBottom: isActive ? '0.2vh solid #3425FF' : 'none'
                             })}
                         >
                             Transport Details
@@ -65,11 +68,12 @@ const StudentProfile = ()=>{
                     <li className="nav-item">
                         <NavLink
                             to="refunds"
-                            className="nav-link text-decoration-none border-none"
+                            className="nav_link text-decoration-none border-none "
                             style={({ isActive }) => ({
-                                fontSize: '13px',
-                                color: isActive ? '#0056d2' : '#555',
-                                borderBottom: isActive ? '0.2vh solid #0056d2' : 'none'
+                                fontSize: '1rem',
+                                fontWeight:isActive ? '700' : '400',
+                                color: isActive ? '#3425FF' : '#555',
+                                borderBottom: isActive ? '0.2vh solid #3425FF' : 'none'
                             })}
                         >
                             Refunds
@@ -78,11 +82,12 @@ const StudentProfile = ()=>{
                     <li className="nav-item">
                         <NavLink
                             to="otherfeeheads"
-                            className="nav-link text-decoration-none"
-                            style={({ isActive }) => ({
-                                fontSize: '13px',
-                                color: isActive ? '#0056d2' : '#555',
-                                borderBottom: isActive ? '0.2vh solid #0056d2' : 'none'
+                            className="nav_link text-decoration-none"
+                             style={({ isActive }) => ({
+                                fontSize: '1rem',
+                                fontWeight:isActive ? '700' : '400',
+                                color: isActive ? '#3425FF' : '#555',
+                                borderBottom: isActive ? '0.2vh solid #3425FF' : 'none'
                             })}
                         >
                             Other Fee Heads
@@ -90,11 +95,9 @@ const StudentProfile = ()=>{
                     </li>
                 </ul>
             </div>
-            <div>
+            <div >
                <Outlet/>
             </div>
-
-
         </section>
        </div>
     )

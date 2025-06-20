@@ -1,12 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Cancellation from "./CancellationForm";
-// import PaymentForm from "./PaymentsForm";
-// import FeeInstallments from "./FeeInstallmentsForm"
-// import Concession from "./ConcessionForm"
-// import PmIssues from "./PMIssuesForm"
-// import Transport from "./TransportForm"
-// import Uniform from "./UniformForm"
-// import Akashbooks from "./AkashBooksForm"
 import './Payment.css';
 import useNavigation from "../../customhooks/useNav";
 import {NavLink, Outlet } from "react-router-dom";
@@ -61,7 +53,7 @@ const Payment= ()=> {
                   key={index}
                   to={tab.path}
                   className={({ isActive }) => (isActive ? 'sub-tab active' : 'sub-tab')}
-                  end={tab.path === '/payments'}
+                  end={tab.path === '/payment'}
                   >
                     {tab.name}
                   </NavLink>

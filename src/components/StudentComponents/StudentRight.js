@@ -1,15 +1,10 @@
 import "./right-sidebar.css";
 import studentimage from "../../assets/student-image.jpg";
 import { useState } from "react";
-import {useStudentProfile} from "../../backend/queries"
-import { useStudentContext } from '../../customhooks/StudentContext'; 
+import { useStudentProfile } from "../../backend/queries"
+import { useStudentContext } from '../../customhooks/StudentContext';
 
 const StudentProfileRight = () => {
-
-    const {studentId} = useStudentContext();
-    
-    const{data, isLoading, isError, error} = useStudentProfile();
-    console.log(data);
 
 
     const [openSection, setOpenSection] = useState({
@@ -25,43 +20,37 @@ const StudentProfileRight = () => {
         }));
     };
 
-    if (isLoading) {
-    return <div className="container-fluid px-0 mt-4">Loading...</div>;
-  }
+    const { studentId } = useStudentContext();
 
-  if (isError) {
-    return (
-      <div className="container-fluid px-0 mt-4">
-        Error: {error?.message || "Failed to load student profile"}
-      </div>
-    );
-  }
+    // const { data, isLoading, isError, error } = useStudentProfile();
+    // console.log(data);
 
-    if(!data){
-        return(
-            <div>
-                No Student Profile Details available;
-            </div>
-        )
-    }
+
+    // if (isLoading) {
+    //     return <div className="container-fluid px-0 mt-4">Loading...</div>;
+    // }
+
+    // if (isError) {
+    //     return (
+    //         <div className="container-fluid px-0 mt-4">
+    //             Error: {error?.message || "Failed to load student profile"}
+    //         </div>
+    //     );
+    // }
+
+    // if (!data) {
+    //     return (
+    //         <div>
+    //             No Student Profile Details available;
+    //         </div>
+    //     )
+    // }
 
     const DownArrow = () => (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="23"
-            height="22"
-            viewBox="0 0 23 22"
-            fill="none"
-            className="accordion-arrow"
-        >
-            <path
-                d="M17.5 10L12.5 15L7.5 10"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 10L12.5 15L7.5 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
+
     );
     return (
         <section className="student_right_container">
@@ -82,14 +71,14 @@ const StudentProfileRight = () => {
                         <p className="mb-0">HYD {studentId} </p>
                     </div>
                     <div className="student_name mt-1">
-                        <h3 className="mb-0" style={{ fontSize: '15px' }}>{data.studentName}</h3>
+                        <h3 className="mb-0" style={{ fontSize: '15px' }}>{"N/A"}</h3>
                     </div>
                     <div className="student_gender_caste d-flex align-items-center justify-content-center gap-2 ">
                         <div className="student_gender d-flex align-items-center gap-2">
                             <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13 2V6.5H11.5V4.56875L8.51875 7.53125C8.75625 7.88125 8.9375 8.25325 9.0625 8.64725C9.1875 9.04125 9.25 9.4505 9.25 9.875C9.25 11.025 8.85 12 8.05 12.8C7.25 13.6 6.275 14 5.125 14C3.975 14 3 13.6 2.2 12.8C1.4 12 1 11.025 1 9.875C1 8.725 1.4 7.75 2.2 6.95C3 6.15 3.975 5.75 5.125 5.75C5.5375 5.75 5.94375 5.80925 6.34375 5.92775C6.74375 6.04625 7.1125 6.23075 7.45 6.48125L10.4313 3.5H8.5V2H13ZM5.125 7.25C4.4 7.25 3.78125 7.50625 3.26875 8.01875C2.75625 8.53125 2.5 9.15 2.5 9.875C2.5 10.6 2.75625 11.2188 3.26875 11.7313C3.78125 12.2438 4.4 12.5 5.125 12.5C5.85 12.5 6.46875 12.2438 6.98125 11.7313C7.49375 11.2188 7.75 10.6 7.75 9.875C7.75 9.15 7.49375 8.53125 6.98125 8.01875C6.46875 7.50625 5.85 7.25 5.125 7.25Z" fill="#5558FF" />
                             </svg>
-                            <p className="mb-0">{data.gender}</p>
+                            <p className="mb-0">{"N/A"}</p>
                         </div>
                         <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="2" cy="2" r="2" fill="#D9D9D9" />
@@ -159,7 +148,7 @@ const StudentProfileRight = () => {
                         </div>
                         <div className="student_standard d-flex align-items-center gap-2">
                             <div className="student_year text-white bg-primary rounded px-2 py-1" style={{ backgroundColor: '#4B901F', marginTop: '-15px' }}>
-                                <p className="mb-0"  >{data.type_class || "N/A"}</p>
+                                <p className="mb-0"  >{"N/A"}</p>
                             </div>
                             <div className="student_section text-white bg-success rounded px-2 py-1" style={{ backgroundColor: '#4B901F', marginTop: '-15px' }}>
                                 <p className="mb-0"  >NEON</p>
@@ -169,17 +158,17 @@ const StudentProfileRight = () => {
                     <div className="student_group_admission_type d-flex justify-content-between mt-3">
                         <div className="student_group">
                             <p className="text-muted mb-0">Group Name</p>
-                            <p className="mb-0">{data.group_name}</p>
+                            <p className="mb-0">{"N/A"}</p>
                         </div>
                         <div className="student_admission_type text-end">
                             <p className="text-muted mb-0">Admission Type</p>
-                            <p className="mb-0">{data.admission_type}</p>
+                            <p className="mb-0">{"N/A"}</p>
                         </div>
                     </div>
                     <div className="student_section_admission_status d-flex justify-content-between mt-2">
                         <div className="student_section_type">
                             <p className="text-muted mb-0">Course Track</p>
-                            <p className="mb-0">{data.course_track}</p>
+                            <p className="mb-0">{"N/A"}</p>
                         </div>
                         <div className="student_admission_status text-end">
                             <p className="text-muted mb-0">Student Type</p>
@@ -188,11 +177,11 @@ const StudentProfileRight = () => {
                     </div>
                     <div className="student_section_bottom mt-2">
                         <p className="text-muted mb-0">Section</p>
-                        <p className="mb-0 text-break">{data.section}</p>
+                        <p className="mb-0 text-break">{"N/A"}</p>
                     </div>
                     <div className="student_admission-status mt-2">
                         <p className="text-muted mb-0">Admission status</p>
-                        <p className="mb-0">{data.admission_status}</p>
+                        <p className="mb-0">{"N/A"}</p>
                     </div>
                 </div>
                 <svg width="100%" height="8" viewBox="0 0 282 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,27 +235,27 @@ const StudentProfileRight = () => {
                                     <div className="student_aadhar_mother d-flex justify-content-between">
                                         <div className="student_aadhar_number">
                                             <p className="text-muted mb-0">Aadhar Number</p>
-                                            <p className="mb-0">{data.aadhar_no}</p>
+                                            <p className="mb-0">{"N/A"}</p>
                                         </div>
                                         <div className="student_mother_name text-end">
                                             <p className="text-muted mb-0">Mother Name</p>
-                                            <p className="mb-0 text-break">{data.mother_name}</p>
+                                            <p className="mb-0 text-break">{"N/A"}</p>
                                         </div>
                                     </div>
                                     <div className="student_dob_father d-flex justify-content-between mt-2">
                                         <div className="student_dob">
                                             <p className="text-muted mb-0">Date of Birth</p>
-                                            <p className="mb-0">{data.dob}</p>
+                                            <p className="mb-0">{"N/A"}</p>
                                         </div>
                                         <div className="student_father_name text-end">
                                             <p className="text-muted mb-0">Father Name</p>
-                                            <p className="mb-0 text-break">{data.father_name}</p>
+                                            <p className="mb-0 text-break">{"N/A"}</p>
                                         </div>
                                     </div>
                                     <div className="student_address mt-2">
                                         <p className="text-muted mb-0">Address</p>
                                         <p className="mb-0 text-break">
-                                            {data.address}
+                                            {"N/A"}
                                         </p>
                                     </div>
                                 </div>
@@ -298,11 +287,11 @@ const StudentProfileRight = () => {
                                 <div className="accordion-body">
                                     <div className="student_campus_city">
                                         <p className="text-muted mb-0">City</p>
-                                        <p className="mb-0">{data.city}</p>
+                                        <p className="mb-0">{"N/A"}</p>
                                     </div>
                                     <div className="student_campus_name mt-2">
                                         <p className="text-muted mb-0">Campus Name</p>
-                                        <p className="mb-0 text-break">{data.campusName}</p>
+                                        <p className="mb-0 text-break">{"N/A"}</p>
                                     </div>
                                 </div>
                             </div>
@@ -334,23 +323,34 @@ const StudentProfileRight = () => {
                                     <div className="student_languages_1_2 d-flex justify-content-between">
                                         <div className="student_language_1">
                                             <p className="text-muted mb-0">Language 1</p>
-                                            <p className="mb-0">{data.language1}</p>
+                                            <p className="mb-0">{"N/A"}</p>
                                         </div>
                                         <div className="student_language_2 text-end">
                                             <p className="text-muted mb-0">Language 2</p>
-                                            <p className="mb-0">{data.language2}</p>
+                                            <p className="mb-0">{"N/A"}</p>
                                         </div>
                                     </div>
                                     <div className="student_language_3 mt-2">
                                         <p className="text-muted mb-0">Language 3</p>
-                                        <p className="mb-0">{data.language3}</p>
+                                        <p className="mb-0">{"N/A"}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="student_content_3_bottom mt-3">
-                        <div className="student_update_profile_button">
+                        <div className="student_update_profile_button" style={{ position: 'relative', zIndex: 1 }}>
+                            <div style={{
+                                position: 'absolute',
+                                top: '-4px',
+                                left: '-4px',
+                                right: '-4px',
+                                bottom: '-4px',
+                                background: 'linear-gradient(to right, #283AFF, #D239E0, #E06039, #E03939, #39E039, #1FEBAA)',
+                                borderRadius: '6px',
+                                 filter: 'blur(20px)',
+                                zIndex: -1
+                            }}></div>
                             <button className="btn   d-flex align-items-center justify-content-center gap-2" style={{ width: '200px', height: '30px', fontSize: '10px', backgroundColor: "#191275", color: 'white', borderRadius: '6px' }}>
                                 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 2.5H4.16667C3.72464 2.5 3.30072 2.67559 2.98816 2.98816C2.67559 3.30072 2.5 3.72464 2.5 4.16667V15.8333C2.5 16.2754 2.67559 16.6993 2.98816 17.0118C3.30072 17.3244 3.72464 17.5 4.16667 17.5H15.8333C16.2754 17.5 16.6993 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -382,13 +382,10 @@ const StudentProfileRight = () => {
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         transform: 'translate(50%, -50%)',
-                                        backgroundColor:'#FC2323'
+                                        backgroundColor: '#FC2323'
                                     }}>
                                     2
                                 </div>
-
-
-
                             </button>
 
                         </div>

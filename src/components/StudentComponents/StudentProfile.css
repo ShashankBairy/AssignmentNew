@@ -1,0 +1,23 @@
+.nav_link{
+    padding: 1rem;
+}
+
+.stu-info{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.stu-info-sub-para{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #575757;
+}
+
+.year-dropdown{
+    width: 10%;
+    background-color: #F2F2F2;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}

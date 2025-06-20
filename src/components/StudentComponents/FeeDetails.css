@@ -1,6 +1,6 @@
- .fee-summary-container {
+ /* .fee-summary-container {
   height:31.5vh;
-}
+} */
  
  
 .fee-circle-status {
@@ -62,4 +62,15 @@
 }
 .payment-chart{
   margin-right:3vw;
+}
+
+.btn{
+    margin: 5px auto;
+    background-color: #3425FF;
+}
+
+#details{
+  color: #626262;
+  font-size: 1rem;
+  font-weight: 600;
 }

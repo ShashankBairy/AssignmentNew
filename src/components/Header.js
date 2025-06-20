@@ -40,7 +40,7 @@ const Header = ()=>{
             </div>
             </div>
             <div id="header-right" className="d-flex align-items-center">
-                <div id="approvalbutton">
+                <div id="approvalbutton" className="me-5">
                    <button style={{background:"white", color:"#3425FF"}}>
                       <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -99,11 +99,11 @@ const Header = ()=>{
           <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.625 18.2083H20.8333L19.3698 16.7449C18.9729 16.348 18.75 15.8097 18.75 15.2484V11.9583C18.75 9.23705 17.0108 6.92197 14.5833 6.06397V5.70833C14.5833 4.55774 13.6506 3.625 12.5 3.625C11.3494 3.625 10.4166 4.55774 10.4166 5.70833V6.06397C7.98914 6.92197 6.24996 9.23705 6.24996 11.9583V15.2484C6.24996 15.8097 6.02699 16.348 5.6301 16.7449L4.16663 18.2083H9.37496M15.625 18.2083V19.25C15.625 20.9759 14.2258 22.375 12.5 22.375C10.7741 22.375 9.37496 20.9759 9.37496 19.25V18.2083M15.625 18.2083H9.37496" stroke="#3F3F46" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <div className="cashier_details d-flex align-items-center gap-1" style={{ height: '100%' }}>
+          <div className="cashier_details d-flex align-items-center gap-2" style={{ height: '100%' }}>
             <img
               src={cashierlogo}
               alt="cashierlogo"
-              className="cashier_logo"
+              className="cashier_logo "
               style={{
                 height: "50px",
                 width: "50px",
@@ -117,7 +117,8 @@ const Header = ()=>{
                 style={{
                   color: 'var(--Gray-700, #344054)',
                   fontFamily: 'Segoe UI',
-                  fontSize: '80%',
+                  fontSize: '1rem',
+                  fontWeight:"500",
                   padding: "0px",
                   marginBottom: "0px",
                   whiteSpace: "nowrap"
@@ -129,7 +130,7 @@ const Header = ()=>{
                 style={{
                   color: 'var(--Gray-700, #344054)',
                   fontFamily: 'Segoe UI',
-                  fontSize: '80%',
+                  fontSize: '0.7rem',
                   marginBottom: "0px",
                 }}
               >

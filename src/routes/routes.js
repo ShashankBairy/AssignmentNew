@@ -39,7 +39,7 @@ const routes =[
             name:"Pocket Money"
         },
         {
-            path:"transportdetails",
+            path:"transport-info",
             element:<StudentTransport/>,
             name:"Student Transport Details",
         },

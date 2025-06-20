@@ -116,7 +116,7 @@ const UniformForm = () => {
                 {/* Left Column: Paid Receipt No, Pre Print Receipt No */}
                 <div className="col-md-6">
                   <div className="mb-3">
-                    <label htmlFor="receiptNo" className="form-label">Paid Receipt No</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="receiptNo" className="form-label">Paid Receipt No</label>
                     <Field
                       type="text"
                       id="receiptNo"
@@ -128,7 +128,7 @@ const UniformForm = () => {
                   </div>
 
                   <div className="mb-3">
-                    <label htmlFor="prePrintReceiptNo" className="form-label">Pre Print Receipt No</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="prePrintReceiptNo" className="form-label">Pre Print Receipt No</label>
                     <Field
                       type="text"
                       id="prePrintReceiptNo"
@@ -143,7 +143,7 @@ const UniformForm = () => {
                 {/* Right Column: Notes */}
                 <div className="col-md-6">
                   <div className="mb-3">
-                    <label htmlFor="notes" className="form-label">Notes</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="notes" className="form-label">Notes</label>
                     <Field
                       as="textarea"
                       id="notes"

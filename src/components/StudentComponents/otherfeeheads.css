@@ -18,3 +18,9 @@
 .fee-head-row span{
     color:#626262;
 }
+
+#details{
+  color: #626262;
+  font-size: 1rem;
+  font-weight: 600;
+}

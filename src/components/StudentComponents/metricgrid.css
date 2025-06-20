@@ -1,0 +1,14 @@
+#gridbox{
+    background-color: white;
+    border-radius: 8px;
+}
+
+#card-heading{
+    color: #606060;
+    font-weight: 600;
+    font-size: 0.6rem;
+}
+
+#marks-info{
+    color: #606060;
+}

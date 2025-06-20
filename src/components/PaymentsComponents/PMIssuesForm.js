@@ -103,7 +103,7 @@ const PMIssuesForm = () => {
                 {/* Left Column: Card No, Deposit Amount, Issue Amount, Pocket Money Balance, Pay Amount */}
                 <div className="col-md-6">
                   <div className="mb-3">
-                    <label htmlFor="cardNo" className="form-label">Card No</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="cardNo" className="form-label">Card No</label>
                     <Field
                       type="text"
                       id="cardNo"
@@ -117,7 +117,7 @@ const PMIssuesForm = () => {
                 
 
                   <div className="mb-3">
-                    <label htmlFor="issueAmount" className="form-label">Issue Amount</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="issueAmount" className="form-label">Issue Amount</label>
                     <Field
                       type="number"
                       id="issueAmount"
@@ -131,7 +131,7 @@ const PMIssuesForm = () => {
                   
 
                   <div className="mb-3">
-                    <label htmlFor="payAmount" className="form-label">Pay Amount</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="payAmount" className="form-label">Pay Amount</label>
                     <Field
                       type="number"
                       id="payAmount"
@@ -142,7 +142,7 @@ const PMIssuesForm = () => {
                     <ErrorMessage name="payAmount" component="div" className="text-danger" />
                   </div>
                    <div className="mb-3">
-                    <label htmlFor="issueDate" className="form-label">Issue Date</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="issueDate" className="form-label">Issue Date</label>
                     <Field
                       type="date"
                       id="issueDate"
@@ -152,7 +152,7 @@ const PMIssuesForm = () => {
                     <ErrorMessage name="issueDate" component="div" className="text-danger" />
                   </div>
                     <div className="mb-3">
-                    <label htmlFor="remarks" className="form-label">Remarks</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="remarks" className="form-label">Remarks</label>
                     <Field
                       type='input'
                       id="remarks"
@@ -169,7 +169,7 @@ const PMIssuesForm = () => {
                 <div className="col-md-6">
                   <div className="mb-3">
                       <div className="mb-3">
-                    <label htmlFor="depositAmount" className="form-label">Deposit Amount</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="depositAmount" className="form-label">Deposit Amount</label>
                     <Field
                       type="number"
                       id="depositAmount"
@@ -180,7 +180,7 @@ const PMIssuesForm = () => {
                     <ErrorMessage name="depositAmount" component="div" className="text-danger" />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="pocketMoneyBalance" className="form-label">Pocket Money Balance</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="pocketMoneyBalance" className="form-label">Pocket Money Balance</label>
                     <Field
                       type="number"
                       id="pocketMoneyBalance"
@@ -191,7 +191,7 @@ const PMIssuesForm = () => {
                     />
                     <ErrorMessage name="pocketMoneyBalance" component="div" className="text-danger" />
                   </div>
-                    <label htmlFor="description" className="form-label">Description</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="description" className="form-label">Description</label>
                     <Field
                       type='input'
                       id="description"
@@ -206,7 +206,7 @@ const PMIssuesForm = () => {
                  
 
                   <div className="mb-3">
-                    <label htmlFor="paymentMode" className="form-label">Payment Mode</label>
+                    <label style={{fontSize:"0.8rem"}} htmlFor="paymentMode" className="form-label">Payment Mode</label>
                     <Field
                       as="select"
                       id="paymentMode"
